@@ -1,0 +1,6 @@
+{%- css %}{% include "components/post-meta.css" %}{%- endcss %}
+
+<div class="post-metadata">
+	<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+	{% include "components/tagslist.njk" %}
+</div>

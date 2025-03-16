@@ -1,0 +1,25 @@
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	margin-bottom: 4rem;
+}
+.postlist-title {
+	margin-bottom: 0.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}

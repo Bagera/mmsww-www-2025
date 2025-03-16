@@ -1,0 +1,23 @@
+{%- css %}{% include "./projectslist.css" %}{%- endcss %}
+<ol class="projectslist">
+{% for project in projectsslist | reverse %}
+	{% set description =  project.template._frontMatter.data.description%}
+	{% set posttags = project.data.tags %}
+
+	<li class="projectslist-item{% if project.url == url %} projectslist-item-active{% endif %}">
+		<h2 class="projectslist-item-title"><a href="{{ project.url }}" class="projectslist-link">{{ project.data.title }}</a></h2>
+		{% if project.data.image %}
+			{% set imageUrl = eleventy.env.root + project.template.parsed.dir | strReplace("./", "/") + project.data.image | strReplace("./", "/") %}
+			{% image imageUrl , "A mockup of the injuries spread in XDB" , [640] %}
+		{% endif %}
+		{% if description %}
+			{{ description | renderContent("njk") }}
+		{% endif %}
+		{% include "./tagslist.njk" %}
+		{# {% if not loop.last %} #}
+			{% include "./h-flash.njk" %}
+		{# {% endif %} #}
+	</li>
+
+{% endfor %}
+</ol>

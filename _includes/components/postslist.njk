@@ -1,0 +1,19 @@
+{%- css %}{% include "./postslist.css" %}{%- endcss %}
+
+{% set postslistHeadingLevel = 2 %}
+<ol reversed class="postlist">
+{% for post in postslist | reverse %}
+	{% set posttags = post.data.tags %}
+
+	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+		<h{{postslistHeadingLevel}}  class="postlist-title">
+			<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+		</h{{postslistHeadingLevel}}>
+		{% include "components/post-meta.njk" %}
+		<p>{{post.data.description}}</p>
+		{% if not loop.last %}
+			{% include "./h-flash.njk" %}
+		{% endif %}
+	</li>
+{% endfor %}
+</ol>

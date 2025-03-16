@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+projectsToShow: 3
+---
+{%- css %}{% include "public/css/home.css" %}{% endcss %}
+
+<section class="home-header">
+	<h1 class="visually-hidden">{{ metadata.title }}</h1>
+	{% include "components/responsive-logo.njk" %}
+</section>
+
+{% set projectsslist = collections.project | head(-1 * projectsToShow) %}
+{% include "components/projectslist.njk" %}
+
+<h2 class="text-center">Where to buy our stuff</h2>
+<p class="home-links"><a href="https://mmsww.itch.io/">mmsww on itch.io</a></p>

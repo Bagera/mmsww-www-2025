@@ -1,0 +1,64 @@
+main > *,
+.content-sized > * {
+	width: var(--content-width);
+	margin-inline: auto;
+	max-width: 100%;
+}
+main > *.content-wide,
+.content-sized > *.content-wide {
+	width: var(--content-width-wide);
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5 {
+	font-family: var(--font-family-heading);
+}
+
+main h1 {
+	font-size: 3rem;
+}
+main h2 {
+	font-size: 2rem;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: 0.1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+h2 + .header-anchor {
+	font-size: 1.5em;
+}
+
+/* UTILITY CLASSES */
+
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}

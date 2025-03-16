@@ -1,0 +1,11 @@
+.h-flash {
+	text-align: center;
+	margin-block: 6rem;
+}
+
+.h-flash-icon {
+	fill: currentColor;
+	display: inline-block;
+	width: 6rem;
+	height: auto;
+}

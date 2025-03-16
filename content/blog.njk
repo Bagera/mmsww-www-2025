@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Blog
+  order: 2
+---
+
+{%- css %}{% include "public/css/posts.css" %}{%- endcss %}
+
+<h1>Blog</h1>
+
+{% set postslist = collections.posts %}
+{% include "components/postslist.njk" %}

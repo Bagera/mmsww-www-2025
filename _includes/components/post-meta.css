@@ -1,0 +1,7 @@
+/* Tags list */
+.post-metadata {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	align-items: center;
+}

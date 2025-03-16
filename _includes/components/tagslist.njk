@@ -1,0 +1,14 @@
+{%- css %}{% include "./tagslist.css" %}{%- endcss %}
+
+{%- if not posttags %}
+	{% set posttags = tags %}
+{% endif %}
+
+<ul class="tagslist">
+{%- for tag in posttags | filterTagList %}
+	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	<li class="tagslist-tag">
+	<a href="{{ tagUrl }}" class="tagslist-link">{{ tag }}</a>
+	</li>
+	{%- endfor %}
+</ul>
