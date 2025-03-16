@@ -8,4 +8,5 @@ export default {
 		email: "youremailaddress@example.com",
 		url: "https://example.com/about-me/",
 	},
-}
+	relMe: ["https://dice.camp/@hyper_defined_rat"],
+};
