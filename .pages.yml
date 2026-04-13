@@ -51,6 +51,6 @@ content:
     type: collection
     path: _includes
     fields:
-      - name: title
+      - name: layout_title
         type: string
     subfolders: true
