@@ -1,3 +1,7 @@
+---
+layout_title: base layout
+---
+
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
@@ -36,7 +40,7 @@
 		{% include "components/header.njk" %}
 
 		<main id="skip">
-				{{ content | safe }}
+			{{ content | safe }}
 		</main>
 
 		{% include "components/footer.njk" %}
