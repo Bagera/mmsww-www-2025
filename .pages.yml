@@ -54,4 +54,3 @@ content:
       - name: title
         type: string
     subfolders: true
-    format: code
