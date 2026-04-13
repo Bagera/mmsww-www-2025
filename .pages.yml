@@ -51,7 +51,3 @@ content:
     type: collection
     path: _includes/layouts
     format: code
-    fields:
-      - name: layout_title
-        type: string
-    subfolders: true
