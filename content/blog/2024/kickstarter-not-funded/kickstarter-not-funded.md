@@ -3,8 +3,7 @@ title: We didn't get funded but that's ok
 description: Thank you to all who backed us! We will still get this game to you if you are still interested.
 date: 2024-03-11
 tags:
-  [XDB,
-	Kickstarter]
+  [XDB, Kickstarter]
 ---
 
 _We lost the battle, but not the war. As always when you try to stand up to The Man and DarkCorp you have to be prepared for them striking back. This time they buried our campaign and scared away all but the most brave backers but it's not like we rolled 13+ on the injury table (death). We will rise again!_
