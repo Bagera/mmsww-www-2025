@@ -45,3 +45,8 @@ content:
             type: number
           - name: body
             type: rich-text
+  - name: layouts
+    label: Page Layouts
+    type: collection
+    path: _includes/layouts
+    format: code
