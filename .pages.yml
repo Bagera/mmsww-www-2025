@@ -14,6 +14,7 @@ content:
         type: date
       - name: tags
         type: string
+        list: true
       - name: body
         type: rich-text
     subfolders: true
