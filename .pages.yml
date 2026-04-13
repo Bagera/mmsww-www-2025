@@ -17,4 +17,4 @@ content:
       - name: body
         type: rich-text
     subfolders: true
-    exclude: [*.11tydata.js]
+    exclude: ["*.11tydata.js"]
