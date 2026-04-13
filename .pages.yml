@@ -31,15 +31,16 @@ content:
             type: string
           - name: layout
             type: select
-            values:
-              - name: "layouts/base.njk"
-                label: Base
-              - name: "layouts/home.njk"
-                label: Home
-              - name: "layouts/post.njk"
-                label: Post
-              - name: "layouts/project.njk"
-                label: Project
+            options:
+              values:
+                - name: "layouts/base.njk"
+                  label: Base
+                - name: "layouts/home.njk"
+                  label: Home
+                - name: "layouts/post.njk"
+                  label: Post
+                - name: "layouts/project.njk"
+                  label: Project
           - name: projectsToShow
             type: number
           - name: body
