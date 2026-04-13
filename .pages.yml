@@ -18,25 +18,29 @@ content:
         type: rich-text
     subfolders: true
     exclude: ["*.11tydata.js"]
-  - name: home
-    label: Home
-    type: file
-    path: content/index.njk
-    fields:
-      - name: title
-        type: string
-      - name: layout:
-        type: select
-        values:
-          - name: "layouts/base.njk"
-            label: Base
-          - name: "layouts/home.njk"
-            label: Home
-          - name: "layouts/post.njk"
-            label: Post
-          - name: "layouts/project.njk"
-            label: Project
-      - name: projectsToShow
-        type: number
-      - name: body
-        type: rich-text
+  - name: pages
+    label: Pages
+    type: group
+    items:   
+      - name: home
+        label: Home
+        type: file
+        path: content/index.njk
+        fields:
+          - name: title
+            type: string
+          - name: layout
+            type: select
+            values:
+              - name: "layouts/base.njk"
+                label: Base
+              - name: "layouts/home.njk"
+                label: Home
+              - name: "layouts/post.njk"
+                label: Post
+              - name: "layouts/project.njk"
+                label: Project
+          - name: projectsToShow
+            type: number
+          - name: body
+            type: rich-text
