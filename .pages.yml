@@ -50,5 +50,8 @@ content:
     label: Page Layouts
     type: collection
     path: _includes
+    fields:
+      - name: title
+        type: string
     subfolders: true
     format: code
