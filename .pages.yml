@@ -49,7 +49,7 @@ content:
   - name: layouts
     label: Page Layouts
     type: collection
-    path: _includes
+    path: _includes/layouts
     fields:
       - name: layout_title
         type: string
