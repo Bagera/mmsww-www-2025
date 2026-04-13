@@ -1,0 +1,20 @@
+media: public/img
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: content/blog
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: date
+        type: date
+      - name: tags
+        type: string
+      - name: body
+        type: rich-text
+    subfolders: true
+    exclude: [*.11tydata.js]
