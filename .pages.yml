@@ -49,5 +49,6 @@ content:
   - name: layouts
     label: Page Layouts
     type: collection
-    path: _includes/layouts
+    path: _includes
+    subfolders: true
     format: code
